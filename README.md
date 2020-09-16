@@ -3,13 +3,11 @@
 
 ## Инструкция по запуску
 1. В командной строке перейти в каталог, в котором лежит код
-2. Создать виртуальное окружение: `virtualenv venv`
-3. Запустить его: `venv\Scripts\activate`
-4. Установить зависимости: `pip install -r requirements.txt`
-5. Создать миграцию: `python manage.py makemigrations btfapi`
-6. Запустить миграцию: `python manage.py migrate`
-7. Запустить сервер: `python manage.py runserver`
-8. После этого перейти по адресу [http://localhost:8000](http://localhost:8000). Там будут инструкции по тому, как пользоваться инструментом
+2. Установить зависимости: `pip install -r requirements.txt`
+3. Создать миграцию: `python manage.py makemigrations btfapi`
+4. Запустить миграцию: `python manage.py migrate`
+5. Запустить сервер: `python manage.py runserver`
+6. После этого перейти по адресу [http://localhost:8000](http://localhost:8000). Там будут инструкции по тому, как пользоваться инструментом
 
 ## Как это работает?
 Проект Beautify состоит из двух приложений: BtfApi и Btf.
