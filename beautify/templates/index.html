@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>About</title>
+        <style>
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+b {
+    color: red;
+    font-weight: bold;
+}
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                Если Вы хотите создать ссылку с адресом
+                <code>https://google.com</code>, то перейдите по адресу
+                <a href='http://{{ request.get_host }}/create?url=https://google.com'>
+                    {{ request.get_host }}/create?url=<b>https://google.com</b>
+                </a>
+            </li>
+            <li>
+                Если Вы хотите создать ссылку с адресом
+                <code>https://google.com</code> и шорткатом
+                <code>site-google</code>, то перейдите по адресу
+                <a href='http://{{ request.get_host }}/create?url=https://google.com&code=site-google'>
+                    {{ request.get_host }}/create?url=<b>https://google.com</b>&code=<b>site-google</b>
+                </a>
+            </li>
+            <li>
+                Если вы хотите перейти по ссылке с шорткатом
+                <code>site-google</code>, то перейдите по адресу
+                <a href='http://{{ request.get_host }}/site-google'>
+                    {{ request.get_host }}/<b>site-google</b>
+                </a>
+            </li>
+        </ul>
+    </body>
+</html>
