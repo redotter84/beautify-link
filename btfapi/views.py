@@ -43,7 +43,7 @@ def check_code(code):
             return False
     return True
 
-@api_view(['POST'])
+@api_view(['GET'])
 def read_link(request):
     payload = json.loads(request.body)
     try:
